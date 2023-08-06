@@ -18,6 +18,14 @@
     flex: 1;
 }
 
+.expensecard_description h6 {
+    color: #3a3a3a;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+}
+
 .expensecard__price {
     font-size: 1rem;
     font-weight: bold;
