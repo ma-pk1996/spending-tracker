@@ -1,12 +1,15 @@
 import './ExpenseCards.css';
 
 function ExpenseCard () {
+    let ExpenseDate = [];
+    let ExpenseTitle = [];
+    let ExpensePrice = [];
     return (
         <div className="ExpenseCard">
-            <div>23rd of july</div>
+            <div>{ExpenseDate}</div>
             <div className="ExpenseCard_Description">
-                <h6>Buying playstation</h6>
-                <div className="ExpenseCard__Price">$499</div>      
+                <h6>{ExpenseTitle}</h6>
+                <div className="ExpenseCard__Price">${ExpensePrice}</div>      
             </div>
         
         </div>
