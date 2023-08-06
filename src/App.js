@@ -1,5 +1,3 @@
-
-import './App.css';
 import ExpenseCard from './Components/ExpenseCards';
 
 
