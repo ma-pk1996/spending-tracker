@@ -1,0 +1,48 @@
+.expensecard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    border-radius: 12px;
+    background-color: cornflowerblue;
+}
+
+.expensecard_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.expensecard__price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: beige;
+    background-color: darkslateblue;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+@media (min-width: 580) {
+    .expensecard_description {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .expensecard_description h6 {
+        font-size: 1.25rem;
+    }
+
+    .expensecard__price {
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
