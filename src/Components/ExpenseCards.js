@@ -1,15 +1,12 @@
 import './ExpenseCards.css';
 
-function ExpenseCard () {
-    let ExpenseDate = [];
-    let ExpenseTitle = [];
-    let ExpensePrice = [];
+function ExpenseCard (props) {
     return (
         <div className="ExpenseCard">
-            <div>{ExpenseDate}</div>
+            <div>{props.date.toString()}</div>
             <div className="ExpenseCard_Description">
-                <h6>{ExpenseTitle}</h6>
-                <div className="ExpenseCard__Price">${ExpensePrice}</div>      
+                <h6>{props.title}</h6>
+                <div className="ExpenseCard__Price">${props.amount}</div>      
             </div>
         
         </div>
