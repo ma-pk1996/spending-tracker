@@ -1,0 +1,47 @@
+
+
+.main-date {
+    display: flex;
+    flex-direction: column;
+    width: 5.2rem;
+    height: 5.2rem;
+    border: 2px solid #ececec;
+    background-color: #686A6C;
+    color: bisque;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.date-day {
+    font-size: 1.1rem bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

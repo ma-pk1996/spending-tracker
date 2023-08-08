@@ -1,5 +1,4 @@
-import ExpenseCard from './Components/ExpenseCards';
-
+import Expense from './Components/Expense';
 
 function App() {
   const Expenses = [
@@ -9,15 +8,7 @@ function App() {
   ];
   return (
     <div>
-    <ExpenseCard
-      expense={Expenses[0]}
-    />
-    <ExpenseCard
-      expense={Expenses[1]}
-    />
-    <ExpenseCard
-      expense={Expenses[2]}
-    />
+    <Expense items={Expenses} />
     </div>
   );
 }
