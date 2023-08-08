@@ -1,9 +1,11 @@
 import './ExpenseCards.css';
+import ExpenseDate from './ExpenseDate';
 
 function ExpenseCard (props) {
+
     return (
         <div className="ExpenseCard">
-            <div>{props.expense.date.toString()}</div>
+            <ExpenseDate date={props.expense.date} />
             <div className="ExpenseCard_Description">
                 <h6>{props.expense.title}</h6>
                 <div className="ExpenseCard__Price">${props.expense.amount}</div>      

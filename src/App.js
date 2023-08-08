@@ -9,16 +9,15 @@ function App() {
   ];
   return (
     <div>
-      <h5>hello everyone</h5>
     <ExpenseCard
       expense={Expenses[0]}
-    ></ExpenseCard>
+    />
     <ExpenseCard
       expense={Expenses[1]}
-    ></ExpenseCard>
+    />
     <ExpenseCard
       expense={Expenses[2]}
-    ></ExpenseCard>
+    />
     </div>
   );
 }
