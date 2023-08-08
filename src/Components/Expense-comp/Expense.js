@@ -1,6 +1,6 @@
 import ExpenseCard from "./ExpenseCards";
 import './Expense.css';
-import Card from "./Card";
+import Card from "../Common-comp/Card";
 
 
 function Expense(props) {
