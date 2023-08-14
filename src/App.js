@@ -1,4 +1,6 @@
 import Expense from './Components/Expense-comp/Expense.js';
+import NewExpense from "../../spending-tracker/src/Components/Expense-comp/NewExpense.jsx";
+
 
 function App() {
   const Expenses = [
@@ -8,7 +10,8 @@ function App() {
   ];
   return (
     <div>
-    <Expense items={Expenses} />
+      <NewExpense />
+      <Expense items={Expenses} />
     </div>
   );
 }
