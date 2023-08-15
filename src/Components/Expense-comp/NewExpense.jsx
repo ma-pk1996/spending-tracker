@@ -9,10 +9,17 @@ import "./NewExpense.css";
 
 
 
-function NewExpense () {
+function NewExpense (props) {
+    function SaveExpenseHandler (entereddata) {
+        const expenseData = {
+            ...entereddata,
+            id: Math.random().toString()
+        }
+        props.onRecieveData();
+    }
     return (
         <div className="new-expense">
-        <ExpenseForm />
+        <ExpenseForm onSaveExpenseData={SaveExpenseHandler}/>
         </div>
     )
 }
