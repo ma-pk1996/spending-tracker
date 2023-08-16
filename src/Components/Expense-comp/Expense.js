@@ -5,13 +5,15 @@ import Card from "../Common-comp/Card";
 
 function Expense(props) {
     return (
+      <div>
         <Card className="expenses">
-        {props.items.map((expense) => <ExpenseCard
-          title={props.title}
-          amount={props.amount}
-          date={props.date}
-        />)}
+          {props.items.map(expense => <ExpenseCard
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}  
+          />)}
         </Card>
+      </div>    
     );
 }
 
