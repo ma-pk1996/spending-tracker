@@ -10,11 +10,11 @@ const FakeExpenses = [
 
 function App() {
   const [expenses, setExpense] = useState(FakeExpenses);
-  
-  function setAddExpense(expense) {
-      setExpense((prevExpenses) => {
-        return [expense, ...prevExpenses];
-      })
+
+  const  setAddExpense = (expense) => {
+    setExpense((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    })
   }
   return (
     <div>
