@@ -15,7 +15,7 @@ function NewExpense (props) {
             ...entereddata,
             id: Math.random().toString()
         }
-        props.onAddExpense();
+        props.onAddExpense(expenseData);
     }
     return (
         <div className="new-expense">
